@@ -8,7 +8,7 @@
     }
 
     main {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 100%;
         align-items: center;
         justify-content: center;
@@ -150,6 +150,7 @@ input:checked ~ .options {
 
     .socialNetwork {
         width: 100%;
+        padding: 30px;
         align-items: center;
         justify-content: center;
     }
