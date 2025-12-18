@@ -1,0 +1,29 @@
+{
+    "projetos": [
+        {
+            "name": "Projeto 1",
+            "photo": "./src/Assets/projeto-1.png",
+            "link": "https://blog-preview-card-dusky.vercel.app/"
+        },
+        {
+            "name": "Projeto 2",
+            "photo": "./src/Assets/projeto-2.png",
+            "link": "https://joao11092005.github.io/Clipboard-landing-page/"
+        },
+        {
+            "name": "Projeto 3",
+            "photo": "./src/Assets/projeto-3.png",
+            "link": "https://joao11092005.github.io/Frontend-Mentor-NFT-preview-card-component/"
+        },
+        {
+            "name": "Projeto 4",
+            "photo": "./src/Assets/projeto-4.png",
+            "link": "https://joao11092005.github.io/order-sumarry-card/"
+        },
+        {
+            "name": "Projeto 5",
+            "photo": "./src/Assets/projeto-5.png",
+            "link": "https://code-cafe.onrender.com/#quem-somos"
+        }
+    ]
+}

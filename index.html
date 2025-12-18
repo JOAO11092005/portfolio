@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joao Paulo Neves - Desenvolvedor Frontend</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="shortcut icon" href="./src/Assets/ico.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">JN</h1>
+        <input type="checkbox" id="menu">
+
+        <div class="menu">
+            <label for="menu">
+                <p class="menu-hamburguer"></p>
+            </label>
+        </div>
+
+        <div class="options">
+            <button onclick="pdfView('abrir')">Meu Curriculo</button>
+            <button id="ProjectButton" onclick="inicializateProject('abrir')">Meus Projetos</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="description">
+            <h1>Olá! Eu sou João Paulo Neves</h1>
+
+            <p>
+                Desenvolvedor <strong>Front-end em formação</strong>, apaixonado por tecnologia e pela criação de
+                interfaces
+                modernas, funcionais e intuitivas.
+            </p>
+
+            <p>
+                Estou me desafiando com novos projetos, buscando evoluir minhas habilidades, aprender
+                boas
+                práticas e trocar feedback com a comunidade de programação.
+            </p>
+
+
+            <div class="socialNetwork">
+                <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-neves-batista-39a750219?trk=people-guest_people_search-card" aria-label="LinkedIn" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/JOAO11092005" aria-label="GitHub" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://wa.me/5562992576354?text=Ol%C3%A1%2C%20falo%20com%20Jo%C3%A3o%20Paulo%20Neves%3F%20Vim%20pelo%20seu%20portf%C3%B3lio."
+                    target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+        </section>
+
+
+        <section class="profile">
+            <img src="./src/Assets/Gemini_Generated_Image_lzx05wlzx05wlzx0.png" alt="Perfil">
+        </section>
+    </main>
+
+    <div class="projects lock">
+        <div class="projectHeader">
+            <h2>Meus Projetos</h2>
+            <button onclick="inicializateProject('fechar')" class="btncloseProjetc">Fechar</button>
+        </div>
+
+        <div class="projectsList">
+
+        </div>
+    </div>
+
+    <div class="pdfVisualizer lock" id="pdfVisualizer">
+        <div class="pdfHeader">
+            <h2>Meu Currículo</h2>
+
+            <div class="pdfActions ">
+                <a href="./assets/curriculo-joao-paulo.pdf" download class="downloadBtn">
+                    <i class="fa-solid fa-download"></i> Baixar PDF
+                </a>
+                <button onclick="pdfView('fechar')" class="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <iframe src="./src/Assets/Currículo_João_Paulo[1].pdf" frameborder="0" class="pdfFrame">
+        </iframe>
+    </div>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

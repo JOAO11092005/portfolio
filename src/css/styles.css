@@ -1,0 +1,213 @@
+:root{
+    --bodyColor: #474747;
+    --letter: #ffff;
+    --font: "Rubik", sans-serif;
+}
+
+body{
+    background: var(--bodyColor);
+background: linear-gradient(150deg, rgba(71, 71, 71, 1) 9%, rgba(48, 40, 40, 1) 50%, rgba(5, 16, 18, 1) 82%);
+    height: 100vh;
+    color: var(--letter);
+    max-width: 1120px;
+    margin: 0 auto;
+    font-family: var(--font);
+}
+
+header{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.logo{
+    border: 3px solid var(--letter);
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options{
+    display: flex;
+    gap: 10px;
+}
+button , .downloadBtn , .closeBtn{
+    width: 160px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #ffffff00;
+    color: var(--letter);
+    font-size: 17px;
+    border: 1px solid var(--letter);
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover , .downloadBtn:hover{
+    background-color: var(--letter);
+    color: #000000;
+    /* box-shadow: 0px 0px 10px 5px white; */
+    transition: 0.5s ease-in-out;
+}
+main{
+    /* background-color: blue; */
+    display: flex;
+    height: 455px;
+}
+.profile{
+    /* background-color:red; */
+    width: 50%;
+   height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile img{
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   border: 3px solid var(--letter);
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+     width: 100%;
+    height: 100%;
+}
+.description h1{
+    font-size: 40px;
+}
+.description p{
+    font-size: 26px;
+    width: 90%;
+}
+.socialNetwork{
+    width: 500px;
+    max-width: 500px;
+    display: flex;
+    gap: 10px;
+}
+.socialNetwork a{
+    border: 1px solid var(--letter);
+    padding: 10px;
+    font-size: 23px;
+    color: var(--letter);
+    border-radius: 50px;
+    transition: 0.4s ease-in-out;
+}
+.socialNetwork a:hover{
+    background-color: var(--letter);
+    color: #000000;
+    transform: scale(1.2);
+    transition: 0.4s ease-in-out;
+}
+.projects{
+    width: 100%;
+    /* height: 100vh; */
+   background: var(--bodyColor);
+    background: linear-gradient(150deg, rgba(71, 71, 71, 1) 9%, rgba(48, 40, 40, 1) 50%, rgba(5, 16, 18, 1) 82%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.projects.lock{
+  display: none;
+}
+
+.pdfVisualizer {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.pdfVisualizer.lock {
+    display: none;
+}
+
+.pdfHeader {
+    background: #111;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pdfActions {
+    display: flex;
+    gap: 10px;
+}
+
+
+.closeBtn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.pdfFrame {
+    flex: 1;
+    width: 100%;
+}
+.projectHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.cardProject{
+    width: 250px;
+    height: 400px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    background-size: cover;
+    justify-content: flex-end;
+
+}
+.cardProject:hover{
+   transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    border: 3px solid var(--letter);
+}
+.projectsList{
+    width: 1115px;
+    max-width: 1115px;
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.cardProject h4{
+    padding: 10px;
+}
+.bg-card{
+    width: 100%;
+    height: 100%;
+    background: #000000;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.83) 12%, rgba(0, 0, 0, 0.82) 100%);
+ cursor: pointer;
+}
+.bg-card:hover{
+    background: #8f8f8f;
+background: linear-gradient(180deg, rgba(143, 143, 143, 0.33) 12%, rgba(181, 181, 181, 0) 100%);
+color: var(--bodyColor);
+}
