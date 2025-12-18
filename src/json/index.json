@@ -24,6 +24,16 @@
             "name": "Projeto 5",
             "photo": "./src/Assets/projeto-5.png",
             "link": "https://code-cafe.onrender.com/#quem-somos"
+        },
+        {
+            "name": "Projeto 6",
+            "photo": "./src/Assets/projeto-6.png",
+            "link": "https://projeto-fundo-magico.vercel.app/"
+        },
+        {
+            "name": "Projeto 7",
+            "photo": "./src/Assets/projeto-7.png",
+            "link": "https://projeto-indigena.vercel.app/"
         }
     ]
 }
